@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.weli.learnandroiddemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/my_image"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".BroadcastDemo.BroadcastActivity.LocalBroadcastActivity"></activity>
+        <activity android:name=".ServiceDemo.ServiceMainActivity" />
+        <activity android:name=".BroadcastDemo.BroadcastMainActivity" />
+        <activity android:name=".BroadcastDemo.BroadcastActivity.ReceiveSysBroadcastActivity" />
+        <activity android:name=".ActivityDemo.SartMode.SingleInstanceActivity" />
+        <activity android:name=".ActivityDemo.SartMode.SingleTaskActivity" />
+        <activity
+            android:name=".ActivityDemo.SartMode.EActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ActivityDemo.SartMode.DActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ActivityDemo.SartMode.CActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ActivityDemo.SartMode.BActivity"
+            android:launchMode="standard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ActivityDemo.ActivityDemo_main" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".ServiceDemo.StartMethod.StartMethod" />
+        <service android:name=".ServiceDemo.StartMethod.BindMethod" />
+    </application>
+
+</manifest>
