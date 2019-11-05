@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">四大组件</string>
+    <string name="app_name">Android Demo</string>
 
     <string name="enter_activity_test">进入Anctivity测试！</string>
     <string name="enter_service_test">进入Service测试！</string>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DataStorage.SpStoreActivity">
+
+
+    <EditText
+        android:id="@+id/ed_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入存储数据！"
+        android:layout_marginTop="50dp"
+        android:password="true"
+        />
+    <Button
+        android:id="@+id/write_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="写入"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/read_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="读取"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20dp"
+        />
+
+</LinearLayout>

@@ -1,4 +1,4 @@
-package cn.weli.learnandroiddemo.BroadcastDemo;
+package cn.weli.learnandroiddemo.FourMajorComponents.BroadcastDemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
@@ -14,7 +14,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import cn.weli.learnandroiddemo.BroadcastDemo.BroadcastActivity.LocalBroadcastActivity;
+import cn.weli.learnandroiddemo.FourMajorComponents.BroadcastDemo.BroadcastActivity.LocalBroadcastActivity;
 import cn.weli.learnandroiddemo.R;
 
 public class BroadcastMainActivity extends AppCompatActivity {

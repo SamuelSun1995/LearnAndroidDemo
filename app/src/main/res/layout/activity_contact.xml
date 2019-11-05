@@ -4,16 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FourMajorComponents.ActivityDemo.SartMode.CActivity">
-
-    <Button
-        android:id="@+id/btn_singleTop_mode"
+    tools:context=".FourMajorComponents.ContentProviderDemo.ContactActivity">
+    <ListView
+        android:id="@+id/tv_ls"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textStyle="bold"
-        android:textSize="36dp"
-        android:text="栈顶复用"
-        android:gravity="center"
-        />
+        android:layout_height="match_parent"></ListView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

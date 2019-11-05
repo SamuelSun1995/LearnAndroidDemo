@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BroadcastDemo.BroadcastActivity.LocalBroadcastActivity">
+    tools:context=".FourMajorComponents.BroadcastDemo.BroadcastActivity.LocalBroadcastActivity">
 
     <Button
         android:id="@+id/create_local_broadcast"

@@ -1,4 +1,4 @@
-package cn.weli.learnandroiddemo.ActivityDemo.SartMode;
+package cn.weli.learnandroiddemo.FourMajorComponents.ActivityDemo.SartMode;
 
 import androidx.appcompat.app.AppCompatActivity;
 

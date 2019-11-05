@@ -1,6 +1,4 @@
-package cn.weli.learnandroiddemo.ActivityDemo.SartMode;
-
-import androidx.appcompat.app.AppCompatActivity;
+package cn.weli.learnandroiddemo.FourMajorComponents.ActivityDemo.SartMode;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,28 +6,31 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import cn.weli.learnandroiddemo.ActivityDemo.ActivityDto;
+import androidx.appcompat.app.AppCompatActivity;
+
+import cn.weli.learnandroiddemo.FourMajorComponents.ActivityDemo.ActivityDto;
 import cn.weli.learnandroiddemo.R;
 
-public class EActivity extends AppCompatActivity {
+public class CActivity extends AppCompatActivity {
 
-    private Button mSingleTask;
+    private Button mBtnMode;
 
-    public static final String TAG = "singleInstance";
-    public int mNum = ActivityDto.getSingleInstance() + 1;
+    public static final String TAG = "singleTop";
+    public int mNum = ActivityDto.getSingleTop() + 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_e);
+        setContentView(R.layout.activity_c);
         Log.i(TAG, "第：" + mNum + "个Activity");
         Log.i(TAG, "onCreate：*************:" + mNum);
-        ActivityDto.setSingleInstance(mNum);
-        mSingleTask = findViewById(R.id.singleTask_mode);
-        mSingleTask.setOnClickListener(new View.OnClickListener() {
+        ActivityDto.setSingleTop(mNum);
+        mBtnMode = findViewById(R.id.btn_singleTop_mode);
+        mBtnMode.setText("栈顶复用：" + mNum);
+        mBtnMode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(EActivity.this, SingleInstanceActivity.class);
+                Intent intent = new Intent(CActivity.this, CActivity.class);
                 startActivity(intent);
             }
         });
@@ -77,4 +78,5 @@ public class EActivity extends AppCompatActivity {
         super.onDestroy();
         Log.i(TAG, "onDestroy：*************:" + mNum);
     }
+
 }

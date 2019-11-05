@@ -1,4 +1,4 @@
-package cn.weli.learnandroiddemo.BroadcastDemo.BroadcastActivity;
+package cn.weli.learnandroiddemo.FourMajorComponents.BroadcastDemo.BroadcastActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;

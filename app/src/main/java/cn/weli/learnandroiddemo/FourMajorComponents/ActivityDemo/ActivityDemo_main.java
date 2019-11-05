@@ -1,17 +1,16 @@
-package cn.weli.learnandroiddemo.ActivityDemo;
+package cn.weli.learnandroiddemo.FourMajorComponents.ActivityDemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import cn.weli.learnandroiddemo.ActivityDemo.SartMode.BActivity;
-import cn.weli.learnandroiddemo.ActivityDemo.SartMode.CActivity;
-import cn.weli.learnandroiddemo.ActivityDemo.SartMode.DActivity;
-import cn.weli.learnandroiddemo.ActivityDemo.SartMode.EActivity;
+import cn.weli.learnandroiddemo.FourMajorComponents.ActivityDemo.SartMode.BActivity;
+import cn.weli.learnandroiddemo.FourMajorComponents.ActivityDemo.SartMode.CActivity;
+import cn.weli.learnandroiddemo.FourMajorComponents.ActivityDemo.SartMode.DActivity;
+import cn.weli.learnandroiddemo.FourMajorComponents.ActivityDemo.SartMode.EActivity;
 import cn.weli.learnandroiddemo.R;
 
 public class ActivityDemo_main extends AppCompatActivity implements View.OnClickListener {

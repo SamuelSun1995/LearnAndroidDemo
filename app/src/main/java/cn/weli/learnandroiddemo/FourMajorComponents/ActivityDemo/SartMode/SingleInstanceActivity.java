@@ -1,4 +1,4 @@
-package cn.weli.learnandroiddemo.ActivityDemo.SartMode;
+package cn.weli.learnandroiddemo.FourMajorComponents.ActivityDemo.SartMode;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import cn.weli.learnandroiddemo.ActivityDemo.ActivityDto;
+import cn.weli.learnandroiddemo.FourMajorComponents.ActivityDemo.ActivityDto;
 import cn.weli.learnandroiddemo.R;
 
 public class SingleInstanceActivity extends AppCompatActivity {

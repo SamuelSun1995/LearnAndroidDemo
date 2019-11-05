@@ -1,4 +1,6 @@
-package cn.weli.learnandroiddemo.ActivityDemo.SartMode;
+package cn.weli.learnandroiddemo.FourMajorComponents.ActivityDemo.SartMode;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,36 +8,32 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import cn.weli.learnandroiddemo.ActivityDemo.ActivityDto;
+import cn.weli.learnandroiddemo.FourMajorComponents.ActivityDemo.ActivityDto;
 import cn.weli.learnandroiddemo.R;
 
-public class CActivity extends AppCompatActivity {
-
+public class DActivity extends AppCompatActivity {
     private Button mBtnMode;
 
-    public static final String TAG = "singleTop";
-    public int mNum = ActivityDto.getSingleTop() + 1;
+    public static final String TAG = "singleTask";
+    public int mNum = ActivityDto.getSingleTask() + 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_c);
+        setContentView(R.layout.activity_d);
         Log.i(TAG, "第：" + mNum + "个Activity");
         Log.i(TAG, "onCreate：*************:" + mNum);
-        ActivityDto.setSingleTop(mNum);
-        mBtnMode = findViewById(R.id.btn_singleTop_mode);
-        mBtnMode.setText("栈顶复用：" + mNum);
+        ActivityDto.setSingleTask(mNum);
+        mBtnMode = findViewById(R.id.btn_singleTask_mode);
+        mBtnMode.setText("栈内复用：" + mNum);
         mBtnMode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CActivity.this, CActivity.class);
+                Intent intent = new Intent(DActivity.this, SingleTaskActivity.class);
                 startActivity(intent);
             }
         });
     }
-
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);

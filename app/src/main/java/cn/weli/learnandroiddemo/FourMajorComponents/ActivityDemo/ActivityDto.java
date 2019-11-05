@@ -1,4 +1,4 @@
-package cn.weli.learnandroiddemo.ActivityDemo;
+package cn.weli.learnandroiddemo.FourMajorComponents.ActivityDemo;
 
 public class ActivityDto {
 

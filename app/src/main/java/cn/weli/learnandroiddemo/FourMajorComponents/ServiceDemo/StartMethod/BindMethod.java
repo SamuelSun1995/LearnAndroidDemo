@@ -1,4 +1,4 @@
-package cn.weli.learnandroiddemo.ServiceDemo.StartMethod;
+package cn.weli.learnandroiddemo.FourMajorComponents.ServiceDemo.StartMethod;
 
 import android.app.Service;
 import android.content.Intent;

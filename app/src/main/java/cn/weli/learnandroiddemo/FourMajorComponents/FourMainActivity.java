@@ -1,4 +1,4 @@
-package cn.weli.learnandroiddemo;
+package cn.weli.learnandroiddemo.FourMajorComponents;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,11 +8,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import cn.weli.learnandroiddemo.ActivityDemo.ActivityDemo_main;
-import cn.weli.learnandroiddemo.BroadcastDemo.BroadcastMainActivity;
-import cn.weli.learnandroiddemo.ServiceDemo.ServiceMainActivity;
+import cn.weli.learnandroiddemo.FourMajorComponents.ActivityDemo.ActivityDemo_main;
+import cn.weli.learnandroiddemo.FourMajorComponents.BroadcastDemo.BroadcastMainActivity;
+import cn.weli.learnandroiddemo.FourMajorComponents.ContentProviderDemo.ContentProviderActivity;
+import cn.weli.learnandroiddemo.FourMajorComponents.ServiceDemo.ServiceMainActivity;
+import cn.weli.learnandroiddemo.R;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class FourMainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button mActivity;
     private Button mService;
@@ -45,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.activity_test:
-                Intent intent_a = new Intent(MainActivity.this, ActivityDemo_main.class);
+                Intent intent_a = new Intent(FourMainActivity.this, ActivityDemo_main.class);
                 startActivity(intent_a);
                 Toast.makeText(this,getString(R.string.enter_activity_test),Toast.LENGTH_SHORT).show();
                 break;
@@ -60,6 +62,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(this,getString(R.string.enter_broadcasst_test),Toast.LENGTH_SHORT).show();
                 break;
             case R.id.contentprovider_test:
+                Intent intent_c = new Intent(this, ContentProviderActivity.class);
+                startActivity(intent_c);
                 Toast.makeText(this,getString(R.string.enter_contentprovider_test),Toast.LENGTH_SHORT).show();
                 break;
 

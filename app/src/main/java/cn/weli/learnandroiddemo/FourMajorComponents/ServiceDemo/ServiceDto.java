@@ -1,4 +1,4 @@
-package cn.weli.learnandroiddemo.ServiceDemo;
+package cn.weli.learnandroiddemo.FourMajorComponents.ServiceDemo;
 
 public class ServiceDto {
     public static int startServiceNum;

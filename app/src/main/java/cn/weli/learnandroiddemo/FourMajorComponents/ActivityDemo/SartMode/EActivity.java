@@ -1,4 +1,4 @@
-package cn.weli.learnandroiddemo.ActivityDemo.SartMode;
+package cn.weli.learnandroiddemo.FourMajorComponents.ActivityDemo.SartMode;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,32 +8,33 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import cn.weli.learnandroiddemo.ActivityDemo.ActivityDto;
+import cn.weli.learnandroiddemo.FourMajorComponents.ActivityDemo.ActivityDto;
 import cn.weli.learnandroiddemo.R;
 
-public class DActivity extends AppCompatActivity {
-    private Button mBtnMode;
+public class EActivity extends AppCompatActivity {
 
-    public static final String TAG = "singleTask";
-    public int mNum = ActivityDto.getSingleTask() + 1;
+    private Button mSingleTask;
+
+    public static final String TAG = "singleInstance";
+    public int mNum = ActivityDto.getSingleInstance() + 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_d);
+        setContentView(R.layout.activity_e);
         Log.i(TAG, "第：" + mNum + "个Activity");
         Log.i(TAG, "onCreate：*************:" + mNum);
-        ActivityDto.setSingleTask(mNum);
-        mBtnMode = findViewById(R.id.btn_singleTask_mode);
-        mBtnMode.setText("栈内复用：" + mNum);
-        mBtnMode.setOnClickListener(new View.OnClickListener() {
+        ActivityDto.setSingleInstance(mNum);
+        mSingleTask = findViewById(R.id.singleTask_mode);
+        mSingleTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DActivity.this, SingleTaskActivity.class);
+                Intent intent = new Intent(EActivity.this, SingleInstanceActivity.class);
                 startActivity(intent);
             }
         });
     }
+
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
@@ -76,5 +77,4 @@ public class DActivity extends AppCompatActivity {
         super.onDestroy();
         Log.i(TAG, "onDestroy：*************:" + mNum);
     }
-
 }

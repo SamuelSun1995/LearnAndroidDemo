@@ -1,8 +1,7 @@
-package cn.weli.learnandroiddemo.ServiceDemo;
+package cn.weli.learnandroiddemo.FourMajorComponents.ServiceDemo;
 
 import android.content.ComponentName;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
@@ -12,12 +11,10 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
-import cn.weli.learnandroiddemo.BroadcastDemo.BroadcastActivity.LocalBroadcastActivity;
 import cn.weli.learnandroiddemo.R;
-import cn.weli.learnandroiddemo.ServiceDemo.StartMethod.BindMethod;
-import cn.weli.learnandroiddemo.ServiceDemo.StartMethod.StartMethod;
+import cn.weli.learnandroiddemo.FourMajorComponents.ServiceDemo.StartMethod.BindMethod;
+import cn.weli.learnandroiddemo.FourMajorComponents.ServiceDemo.StartMethod.StartMethod;
 
 public class ServiceMainActivity extends AppCompatActivity {
 

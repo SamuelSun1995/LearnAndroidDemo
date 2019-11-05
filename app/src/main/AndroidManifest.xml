@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.weli.learnandroiddemo">
+    <!-- 权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!--SD卡读写权限-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
 
     <application
         android:allowBackup="true"
@@ -9,36 +17,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BroadcastDemo.BroadcastActivity.LocalBroadcastActivity"></activity>
-        <activity android:name=".ServiceDemo.ServiceMainActivity" />
-        <activity android:name=".BroadcastDemo.BroadcastMainActivity" />
-        <activity android:name=".BroadcastDemo.BroadcastActivity.ReceiveSysBroadcastActivity" />
-        <activity android:name=".ActivityDemo.SartMode.SingleInstanceActivity" />
-        <activity android:name=".ActivityDemo.SartMode.SingleTaskActivity" />
-        <activity
-            android:name=".ActivityDemo.SartMode.EActivity"
-            android:launchMode="singleInstance" />
-        <activity
-            android:name=".ActivityDemo.SartMode.DActivity"
-            android:launchMode="singleTask" />
-        <activity
-            android:name=".ActivityDemo.SartMode.CActivity"
-            android:launchMode="singleTop" />
-        <activity
-            android:name=".ActivityDemo.SartMode.BActivity"
-            android:launchMode="standard"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ActivityDemo.ActivityDemo_main" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".DataStorage.FileStoreActivity"></activity>
+        <activity android:name=".DataStorage.SpStoreActivity" />
+        <activity android:name=".DataStorage.DataStoreMainActivity" />
+        <activity android:name=".RealMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FourMajorComponents.ContentProviderDemo.ContactActivity" />
+        <activity android:name=".FourMajorComponents.ContentProviderDemo.ImageActivity" />
+        <activity android:name=".FourMajorComponents.ContentProviderDemo.ContentProviderActivity" />
+        <activity android:name=".FourMajorComponents.BroadcastDemo.BroadcastActivity.LocalBroadcastActivity" />
+        <activity android:name=".FourMajorComponents.ServiceDemo.ServiceMainActivity" />
+        <activity android:name=".FourMajorComponents.BroadcastDemo.BroadcastMainActivity" />
+        <activity android:name=".FourMajorComponents.BroadcastDemo.BroadcastActivity.ReceiveSysBroadcastActivity" />
+        <activity android:name=".FourMajorComponents.ActivityDemo.SartMode.SingleInstanceActivity" />
+        <activity android:name=".FourMajorComponents.ActivityDemo.SartMode.SingleTaskActivity" />
+        <activity
+            android:name=".FourMajorComponents.ActivityDemo.SartMode.EActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".FourMajorComponents.ActivityDemo.SartMode.DActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".FourMajorComponents.ActivityDemo.SartMode.CActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".FourMajorComponents.ActivityDemo.SartMode.BActivity"
+            android:launchMode="standard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FourMajorComponents.ActivityDemo.ActivityDemo_main" />
+        <activity android:name=".FourMajorComponents.FourMainActivity" />
 
-        <service android:name=".ServiceDemo.StartMethod.StartMethod" />
-        <service android:name=".ServiceDemo.StartMethod.BindMethod" />
+        <service android:name=".FourMajorComponents.ServiceDemo.StartMethod.StartMethod" />
+        <service android:name=".FourMajorComponents.ServiceDemo.StartMethod.BindMethod" />
     </application>
 
 </manifest>

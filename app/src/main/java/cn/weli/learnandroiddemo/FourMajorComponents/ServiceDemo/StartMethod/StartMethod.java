@@ -1,12 +1,12 @@
-package cn.weli.learnandroiddemo.ServiceDemo.StartMethod;
+package cn.weli.learnandroiddemo.FourMajorComponents.ServiceDemo.StartMethod;
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
 
-import cn.weli.learnandroiddemo.ServiceDemo.ServiceDto;
-import cn.weli.learnandroiddemo.ServiceDemo.ServiceMainActivity;
+import cn.weli.learnandroiddemo.FourMajorComponents.ServiceDemo.ServiceDto;
+import cn.weli.learnandroiddemo.FourMajorComponents.ServiceDemo.ServiceMainActivity;
 
 public class StartMethod extends Service {
 
