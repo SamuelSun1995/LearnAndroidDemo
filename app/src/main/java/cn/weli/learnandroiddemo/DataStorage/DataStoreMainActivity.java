@@ -51,6 +51,8 @@ public class DataStoreMainActivity extends AppCompatActivity implements View.OnC
                 startActivity(intent_file);
                 break;
             case R.id.db_store:
+                Intent intent_db = new Intent(this, DbStoreActivity.class);
+                startActivity(intent_db);
                 break;
             case R.id.ContentProvider_store:
                 break;
