@@ -17,6 +17,11 @@ public class Item {
         this.imgId = imgId;
     }
 
+    public Item(String name, int imgId) {
+        this.name = name;
+        this.imgId = imgId;
+    }
+
     private String name;
     private int imgId;
 }

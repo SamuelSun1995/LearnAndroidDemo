@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import cn.weli.learnandroiddemo.R;
 import cn.weli.learnandroiddemo.ViewControl.ListView.ListViewActivity;
+import cn.weli.learnandroiddemo.ViewControl.RecyleView.RecyleViewActivity;
+import cn.weli.learnandroiddemo.ViewControl.ViewPage.ViewPageActivity;
 
 public class ViewActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -89,6 +91,14 @@ public class ViewActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_list:
                 Intent intent_list = new Intent(ViewActivity.this, ListViewActivity.class);
                 startActivity(intent_list);
+                break;
+            case R.id.btn_recyleview:
+                Intent intent_recyle = new Intent(ViewActivity.this, RecyleViewActivity.class);
+                startActivity(intent_recyle);
+                break;
+            case R.id.btn_viewpage:
+                Intent intent_viewpage = new Intent(ViewActivity.this, ViewPageActivity.class);
+                startActivity(intent_viewpage);
                 break;
         }
     }
