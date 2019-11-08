@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import cn.weli.learnandroiddemo.R;
+
 public class WebViewActivity extends AppCompatActivity {
 
     @Override

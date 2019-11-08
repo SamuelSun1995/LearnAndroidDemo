@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewControl.ViewPage.ViewPageActivity3"></activity>
+        <activity android:name=".ViewControl.WebView.WebViewActivity"></activity>
+        <activity android:name=".ViewControl.ViewPage.ViewPageActivity3" />
         <activity android:name=".ViewControl.ViewPage.ViewPageActivity2" />
         <activity android:name=".ViewControl.Fragment.DynamicFragmentActivity" />
         <activity android:name=".ViewControl.Fragment.StaticFragmentActivity" />
