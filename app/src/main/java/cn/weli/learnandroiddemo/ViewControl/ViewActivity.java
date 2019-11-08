@@ -6,10 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.Toast;
 
 import cn.weli.learnandroiddemo.R;
+import cn.weli.learnandroiddemo.ViewControl.Fragment.DynamicFragmentActivity;
+import cn.weli.learnandroiddemo.ViewControl.Fragment.StaticFragmentActivity;
 import cn.weli.learnandroiddemo.ViewControl.ListView.ListViewActivity;
 import cn.weli.learnandroiddemo.ViewControl.RecyleView.RecyleViewActivity;
 import cn.weli.learnandroiddemo.ViewControl.ViewPage.ViewPageActivity;
@@ -27,7 +28,8 @@ public class ViewActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnViewPage;
     private Button mBtnWebView;
     private Button mBtnSurfaceView;
-
+    private Button mBtnFragment;
+    private Button mBtnDynFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +50,8 @@ public class ViewActivity extends AppCompatActivity implements View.OnClickListe
         mBtnViewPage=findViewById(R.id.btn_viewpage);
         mBtnWebView=findViewById(R.id.btn_webview);
         mBtnSurfaceView=findViewById(R.id.btn_surfaceview);
+        mBtnFragment=findViewById(R.id.static_fragment);
+        mBtnDynFragment=findViewById(R.id.dynamic_fragment);
 
     }
 
@@ -63,6 +67,10 @@ public class ViewActivity extends AppCompatActivity implements View.OnClickListe
         mBtnViewPage.setOnClickListener(this);
         mBtnWebView.setOnClickListener(this);
         mBtnSurfaceView.setOnClickListener(this);
+
+        mBtnFragment.setOnClickListener(this);
+        mBtnDynFragment.setOnClickListener(this);
+
     }
 
     @Override
@@ -99,6 +107,15 @@ public class ViewActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_viewpage:
                 Intent intent_viewpage = new Intent(ViewActivity.this, ViewPageActivity.class);
                 startActivity(intent_viewpage);
+                break;
+
+            case R.id.static_fragment:
+                Intent intent_fragment = new Intent(ViewActivity.this, StaticFragmentActivity.class);
+                startActivity(intent_fragment);
+                break;
+            case R.id.dynamic_fragment:
+                Intent intent_dynamic_fragment = new Intent(ViewActivity.this, DynamicFragmentActivity.class);
+                startActivity(intent_dynamic_fragment);
                 break;
         }
     }
