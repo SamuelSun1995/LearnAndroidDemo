@@ -13,7 +13,9 @@ import cn.weli.learnandroiddemo.ViewControl.Fragment.DynamicFragmentActivity;
 import cn.weli.learnandroiddemo.ViewControl.Fragment.StaticFragmentActivity;
 import cn.weli.learnandroiddemo.ViewControl.ListView.ListViewActivity;
 import cn.weli.learnandroiddemo.ViewControl.RecyleView.RecyleViewActivity;
-import cn.weli.learnandroiddemo.ViewControl.ViewPage.ViewPageActivity;
+import cn.weli.learnandroiddemo.ViewControl.ViewPage.ViewPageActivity1;
+import cn.weli.learnandroiddemo.ViewControl.ViewPage.ViewPageActivity2;
+import cn.weli.learnandroiddemo.ViewControl.ViewPage.ViewPageActivity3;
 
 public class ViewActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -26,6 +28,8 @@ public class ViewActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnListView;
     private Button mBtnRecyleView;
     private Button mBtnViewPage;
+    private Button mBtnViewPage2;
+    private Button mBtnViewPage3;
     private Button mBtnWebView;
     private Button mBtnSurfaceView;
     private Button mBtnFragment;
@@ -52,6 +56,9 @@ public class ViewActivity extends AppCompatActivity implements View.OnClickListe
         mBtnSurfaceView=findViewById(R.id.btn_surfaceview);
         mBtnFragment=findViewById(R.id.static_fragment);
         mBtnDynFragment=findViewById(R.id.dynamic_fragment);
+        mBtnViewPage2=findViewById(R.id.btn_viewpage2);
+        mBtnViewPage3=findViewById(R.id.btn_viewpage3);
+
 
     }
 
@@ -65,6 +72,8 @@ public class ViewActivity extends AppCompatActivity implements View.OnClickListe
         mBtnListView.setOnClickListener(this);
         mBtnRecyleView.setOnClickListener(this);
         mBtnViewPage.setOnClickListener(this);
+        mBtnViewPage2.setOnClickListener(this);
+        mBtnViewPage3.setOnClickListener(this);
         mBtnWebView.setOnClickListener(this);
         mBtnSurfaceView.setOnClickListener(this);
 
@@ -105,8 +114,16 @@ public class ViewActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent_recyle);
                 break;
             case R.id.btn_viewpage:
-                Intent intent_viewpage = new Intent(ViewActivity.this, ViewPageActivity.class);
+                Intent intent_viewpage = new Intent(ViewActivity.this, ViewPageActivity1.class);
                 startActivity(intent_viewpage);
+                break;
+            case R.id.btn_viewpage2:
+                Intent intent_viewpage2 = new Intent(ViewActivity.this, ViewPageActivity2.class);
+                startActivity(intent_viewpage2);
+                break;
+            case R.id.btn_viewpage3:
+                Intent intent_viewpage3 = new Intent(ViewActivity.this, ViewPageActivity3.class);
+                startActivity(intent_viewpage3);
                 break;
 
             case R.id.static_fragment:

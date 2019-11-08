@@ -14,9 +14,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewControl.Fragment.DynamicFragmentActivity"></activity>
+        <activity android:name=".ViewControl.ViewPage.ViewPageActivity3"></activity>
+        <activity android:name=".ViewControl.ViewPage.ViewPageActivity2" />
+        <activity android:name=".ViewControl.Fragment.DynamicFragmentActivity" />
         <activity android:name=".ViewControl.Fragment.StaticFragmentActivity" />
-        <activity android:name=".ViewControl.ViewPage.ViewPageActivity" />
+        <activity android:name=".ViewControl.ViewPage.ViewPageActivity1" />
         <activity android:name=".ViewControl.RecyleView.RecyleViewActivity" />
         <activity android:name=".ViewControl.ListView.ListViewActivity" />
         <activity android:name=".ViewControl.ConstraintLayoutActivity" />
