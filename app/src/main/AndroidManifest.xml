@@ -5,7 +5,14 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- SD卡读写权限 -->
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> <!-- webView权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +21,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewControl.WebView.WebViewActivity"></activity>
+        <activity android:name=".ViewControl.View.ClockViewActivity"></activity>
+        <activity android:name=".ViewControl.View.TextViewActivity" />
+        <activity android:name=".ViewControl.View.CusViewActivity" />
+        <activity android:name=".ViewControl.SurfaceView.SurfaceViewActivity" />
+        <activity android:name=".ViewControl.WebView.WebViewActivity" />
         <activity android:name=".ViewControl.ViewPage.ViewPageActivity3" />
         <activity android:name=".ViewControl.ViewPage.ViewPageActivity2" />
         <activity android:name=".ViewControl.Fragment.DynamicFragmentActivity" />

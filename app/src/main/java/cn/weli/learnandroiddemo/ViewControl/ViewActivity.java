@@ -13,9 +13,14 @@ import cn.weli.learnandroiddemo.ViewControl.Fragment.DynamicFragmentActivity;
 import cn.weli.learnandroiddemo.ViewControl.Fragment.StaticFragmentActivity;
 import cn.weli.learnandroiddemo.ViewControl.ListView.ListViewActivity;
 import cn.weli.learnandroiddemo.ViewControl.RecyleView.RecyleViewActivity;
+import cn.weli.learnandroiddemo.ViewControl.SurfaceView.SurfaceViewActivity;
+import cn.weli.learnandroiddemo.ViewControl.View.ClockViewActivity;
+import cn.weli.learnandroiddemo.ViewControl.View.CusViewActivity;
+import cn.weli.learnandroiddemo.ViewControl.View.TextViewActivity;
 import cn.weli.learnandroiddemo.ViewControl.ViewPage.ViewPageActivity1;
 import cn.weli.learnandroiddemo.ViewControl.ViewPage.ViewPageActivity2;
 import cn.weli.learnandroiddemo.ViewControl.ViewPage.ViewPageActivity3;
+import cn.weli.learnandroiddemo.ViewControl.WebView.WebViewActivity;
 
 public class ViewActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -34,6 +39,11 @@ public class ViewActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnSurfaceView;
     private Button mBtnFragment;
     private Button mBtnDynFragment;
+
+    private Button mBtnCusView;
+    private Button mBtnBaseView;
+    private Button mBtnClock;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,15 +59,21 @@ public class ViewActivity extends AppCompatActivity implements View.OnClickListe
         mBtnAl = findViewById(R.id.absolute_layout);
         mBtnCl = findViewById(R.id.constraint_layout);
 
-        mBtnListView=findViewById(R.id.btn_list);
-        mBtnRecyleView=findViewById(R.id.btn_recyleview);
-        mBtnViewPage=findViewById(R.id.btn_viewpage);
-        mBtnWebView=findViewById(R.id.btn_webview);
-        mBtnSurfaceView=findViewById(R.id.btn_surfaceview);
-        mBtnFragment=findViewById(R.id.static_fragment);
-        mBtnDynFragment=findViewById(R.id.dynamic_fragment);
-        mBtnViewPage2=findViewById(R.id.btn_viewpage2);
-        mBtnViewPage3=findViewById(R.id.btn_viewpage3);
+        mBtnListView = findViewById(R.id.btn_list);
+        mBtnRecyleView = findViewById(R.id.btn_recyleview);
+        mBtnViewPage = findViewById(R.id.btn_viewpage);
+        mBtnWebView = findViewById(R.id.btn_webview);
+        mBtnSurfaceView = findViewById(R.id.btn_surfaceview);
+        mBtnFragment = findViewById(R.id.static_fragment);
+        mBtnDynFragment = findViewById(R.id.dynamic_fragment);
+        mBtnViewPage2 = findViewById(R.id.btn_viewpage2);
+        mBtnViewPage3 = findViewById(R.id.btn_viewpage3);
+
+        mBtnCusView = findViewById(R.id.cus_view);
+        mBtnBaseView = findViewById(R.id.btn_baseview);
+
+        mBtnClock = findViewById(R.id.btn_clockview);
+
 
 
     }
@@ -68,7 +84,7 @@ public class ViewActivity extends AppCompatActivity implements View.OnClickListe
         mBtnFl.setOnClickListener(this);
         mBtnAl.setOnClickListener(this);
         mBtnCl.setOnClickListener(this);
-
+        mBtnBaseView.setOnClickListener(this);
         mBtnListView.setOnClickListener(this);
         mBtnRecyleView.setOnClickListener(this);
         mBtnViewPage.setOnClickListener(this);
@@ -79,6 +95,8 @@ public class ViewActivity extends AppCompatActivity implements View.OnClickListe
 
         mBtnFragment.setOnClickListener(this);
         mBtnDynFragment.setOnClickListener(this);
+        mBtnCusView.setOnClickListener(this);
+        mBtnClock.setOnClickListener(this);
 
     }
 
@@ -134,6 +152,29 @@ public class ViewActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent_dynamic_fragment = new Intent(ViewActivity.this, DynamicFragmentActivity.class);
                 startActivity(intent_dynamic_fragment);
                 break;
+            case R.id.btn_webview:
+                Intent intent_webview = new Intent(ViewActivity.this, WebViewActivity.class);
+                startActivity(intent_webview);
+                break;
+            case R.id.btn_surfaceview:
+                Intent intent_surfaceview = new Intent(ViewActivity.this, SurfaceViewActivity.class);
+                startActivity(intent_surfaceview);
+                break;
+
+            case R.id.cus_view:
+                Intent intent_cusView = new Intent(ViewActivity.this, CusViewActivity.class);
+                startActivity(intent_cusView);
+                break;
+            case R.id.btn_baseview:
+                Intent intent_baseview = new Intent(ViewActivity.this, TextViewActivity.class);
+                startActivity(intent_baseview);
+                break;
+
+            case R.id.btn_clockview:
+                Intent intent_clock = new Intent(ViewActivity.this, ClockViewActivity.class);
+                startActivity(intent_clock);
+                break;
+
         }
     }
 }

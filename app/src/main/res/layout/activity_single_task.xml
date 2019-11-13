@@ -12,8 +12,9 @@
         android:layout_height="match_parent"
         android:textStyle="bold"
         android:textSize="36dp"
-        android:text="启动(singleTask)"
+        android:text="启动(SingleTask)"
         android:gravity="center"
+        android:textAllCaps="false"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewControl.View.TextViewActivity">
+
+
+    <TextView
+        android:id="@+id/tv_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:drawableEnd="@mipmap/ic_launcher"
+        android:drawableRight="@mipmap/ic_launcher"
+        android:ems="4"
+        android:text="中华万年历APP" />
+    <!--    设置中间省略，所有字母大写-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:text="中华万年历App中华万年历App中华万年历App中华万年历App中华万年历App中华万年历App中华万年历App中华万年历App中华万年历App"
+        android:textAllCaps="true" />
+
+    <!--为邮件、电话增加链接-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="email|phone"
+        android:singleLine="true"
+        android:text="邮件：sunzhengxiang@weli.cn,电话：1571008939" />
+    <!--设置文字大小并使用阴影-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="#00f"
+        android:shadowDx="10.0"
+        android:shadowDy="8.0"
+        android:shadowRadius="3.0"
+        android:text="中华万年历App"
+        android:textColor="#f00"
+        android:textSize="17dp" />
+
+    <CheckedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkMark="@mipmap/ic_launcher"
+        android:text="可勾选的文本" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_border"
+        android:text="带边框的文本"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_boder2"
+        android:text="圆角边框，渐变背景的文本"
+        android:textSize="17pt" />
+
+</LinearLayout>

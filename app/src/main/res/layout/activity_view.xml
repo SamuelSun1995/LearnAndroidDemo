@@ -70,14 +70,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="ListView" />
+                android:text="ListView"
+                android:textAllCaps="false"/>
 
             <Button
                 android:id="@+id/btn_recyleview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="RecyleView" />
+                android:text="RecyleView"
+                android:textAllCaps="false"
+                />
 
 
         </TableRow>
@@ -88,21 +91,28 @@
                 android:id="@+id/btn_viewpage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="viewpage1" />
+                android:text="ViewPager1"
+                android:textAllCaps="false"
+                />
 
             <Button
                 android:id="@+id/btn_viewpage2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="viewpage2" />
+                android:text="ViewPager2"
+
+                android:textAllCaps="false"
+                />
 
             <Button
                 android:id="@+id/btn_viewpage3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="viewpage3" />
+                android:text="ViewPager3"
+                android:textAllCaps="false"
+                />
 
         </TableRow>
 
@@ -114,7 +124,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="webview" />
+                android:textAllCaps="false"
+                android:text="WebView" />
 
             <Button
                 android:id="@+id/btn_surfaceview"
@@ -131,6 +142,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textAllCaps="false"
                 android:text="静态Fragment" />
 
             <Button
@@ -138,8 +150,34 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textAllCaps="false"
                 android:text="动态Fragment" />
         </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/cus_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="自定义View" />
+            <Button
+                android:id="@+id/btn_baseview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="TextView" />
+
+            <Button
+                android:id="@+id/btn_clockview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="Clock" />
+        </TableRow>
+
 
     </TableLayout>
 
