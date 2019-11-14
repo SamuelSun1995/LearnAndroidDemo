@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="always|withText"
+        android:title="字体大小">
+        <!--定义一组单选菜单-->
+        <menu>
+            <group android:checkableBehavior="single">
+                <!--定义多个菜单项-->
+                <item
+                    android:id="@+id/font_10"
+                    android:title="10号字体" />
+                <item
+                    android:id="@+id/font_12"
+                    android:title="12号字体" />
+                <item
+                    android:id="@+id/font_14"
+                    android:title="14号字体" />
+                <item
+                    android:id="@+id/font_16"
+                    android:title="16号字体" />
+                <item
+                    android:id="@+id/font_18"
+                    android:title="18号字体" />
+            </group>
+        </menu>
+    </item>
+    <!--定义一个普通菜单项-->
+    <item
+        android:id="@+id/plain_item"
+        android:title="普通菜单项"
+        app:showAsAction="always|withText"
+        ></item>
+
+    <item android:title="字体颜色"
+        android:icon="@mipmap/ic_launcher"
+
+        app:showAsAction="always"
+        >
+        <menu>
+            <item android:id="@+id/red_font"
+                android:title="红色"
+                />
+            <item android:id="@+id/green_font"
+                android:title="绿色"
+                />
+            <item android:id="@+id/blue_font"
+                android:title="蓝色"
+                />
+
+        </menu>
+
+
+    </item>
+
+</menu>

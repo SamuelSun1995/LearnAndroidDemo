@@ -18,7 +18,6 @@
                 android:id="@+id/linear_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
                 android:layout_weight="1"
                 android:text="线性布局" />
 
@@ -26,7 +25,6 @@
                 android:id="@+id/table_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
                 android:layout_weight="1"
                 android:text="表格布局"
 
@@ -36,7 +34,6 @@
                 android:id="@+id/fram_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
                 android:layout_weight="1"
                 android:text="帧布局" />
 
@@ -44,7 +41,6 @@
                 android:id="@+id/absolute_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
                 android:text="绝对布局"
                 android:visibility="gone" />
 
@@ -52,7 +48,6 @@
                 android:id="@+id/constraint_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
                 android:layout_weight="1"
                 android:text="约束布局" />
 
@@ -71,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="ListView"
-                android:textAllCaps="false"/>
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/btn_recyleview"
@@ -79,8 +74,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="RecyleView"
-                android:textAllCaps="false"
-                />
+                android:textAllCaps="false" />
 
 
         </TableRow>
@@ -92,8 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ViewPager1"
-                android:textAllCaps="false"
-                />
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/btn_viewpage2"
@@ -102,8 +95,7 @@
                 android:layout_weight="1"
                 android:text="ViewPager2"
 
-                android:textAllCaps="false"
-                />
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/btn_viewpage3"
@@ -111,8 +103,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="ViewPager3"
-                android:textAllCaps="false"
-                />
+                android:textAllCaps="false" />
 
         </TableRow>
 
@@ -124,15 +115,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAllCaps="false"
-                android:text="WebView" />
+                android:text="WebView"
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/btn_surfaceview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="surfaceview" />
+                android:text="SurfaceView"
+                android:textAllCaps="false" />
         </TableRow>
 
         <TableRow>
@@ -142,43 +134,178 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAllCaps="false"
-                android:text="静态Fragment" />
+                android:text="静态Fragment"
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/dynamic_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAllCaps="false"
-                android:text="动态Fragment" />
+                android:text="动态Fragment"
+                android:textAllCaps="false" />
         </TableRow>
+
         <TableRow>
+
             <Button
                 android:id="@+id/cus_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAllCaps="false"
-                android:text="自定义View" />
+                android:text="自定义View"
+                android:textAllCaps="false" />
+
             <Button
                 android:id="@+id/btn_baseview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAllCaps="false"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/btn_clockview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAllCaps="false"
-                android:text="Clock" />
+                android:text="Clock"
+                android:textAllCaps="false" />
         </TableRow>
 
+        <TableRow>
 
+            <Button
+                android:id="@+id/btn_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="进度条"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_viewanimator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ViewAnimator"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_toast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Toast"
+                android:textAllCaps="false" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="日历"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="搜索"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ScrollView"
+                android:textAllCaps="false" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="通知"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="对话框"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_popupwindow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PopupWindow"
+                android:textAllCaps="false" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SubMenu"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_contextmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ContextMenu"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_xmlmenu"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="XmlMenu"
+                android:textAllCaps="false" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_popupmenu"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PopupMenu"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_actionbar"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ActionBar"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_actionview"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ActionView"
+                android:textAllCaps="false" />
+        </TableRow>
     </TableLayout>
 
 

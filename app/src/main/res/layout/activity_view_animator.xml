@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewControl.View.ViewAnimatorActivity">'
+
+
+    <!--定义一个ViewSwitcher组件-->
+    <ViewSwitcher
+        android:id="@+id/viewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--定义滚到上一屏幕的按钮-->
+    <Button
+        android:id="@+id/prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="prev"
+        android:text="&lt;"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="12dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&gt;"
+        app:layout_constraintBaseline_toBaselineOf="@+id/prev"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="12dp"
+        android:onClick="next"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

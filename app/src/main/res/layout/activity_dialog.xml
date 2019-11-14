@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewControl.View.DialogActivity">
+
+    <TextView
+        android:id="@+id/tv_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="文本处！"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/simple_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="简单的对话框"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/simple_list_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="简单列表对话框"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/single_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="简单的单选对话框"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/simple_multiple_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="简单的多选对话框"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/cus_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="简单的自定义列表对话框"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/cus_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="简单的自定义view对话框"
+        android:textAllCaps="false"
+        android:layout_weight="1"/>
+
+
+
+</LinearLayout>

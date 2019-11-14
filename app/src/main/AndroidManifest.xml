@@ -21,7 +21,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewControl.View.ClockViewActivity"></activity>
+        <activity android:name=".ViewControl.View.ActionViewActivity"></activity>
+        <activity android:name=".ViewControl.View.FirstActivitty" />
+        <activity android:name=".ViewControl.View.ActionBarActivity" />
+        <activity android:name=".ViewControl.View.PopupMenuActivity" />
+        <activity android:name=".ViewControl.View.XmlMenuActivity" />
+        <activity android:name=".ViewControl.View.ContextMenuActivity" />
+        <activity
+            android:name=".ViewControl.View.OtherActivity"
+            android:label="查看《微鲤》" />
+        <activity android:name=".ViewControl.View.MenuActivity" />
+        <activity android:name=".ViewControl.View.PopupWindowActivity" />
+        <activity android:name=".ViewControl.View.DialogActivity" />
+        <activity android:name=".ViewControl.View.NotiActivity" />
+        <activity android:name=".ViewControl.View.ScrollViewActivity" />
+        <activity android:name=".ViewControl.View.SearchViewActivity" />
+        <activity android:name=".ViewControl.View.CalendarViewActivity" />
+        <activity android:name=".ViewControl.View.ToastActivity" />
+        <activity android:name=".ViewControl.View.ViewAnimatorActivity" />
+        <activity android:name=".ViewControl.View.ProgressBarActivity" />
+        <activity android:name=".ViewControl.View.ClockViewActivity" />
         <activity android:name=".ViewControl.View.TextViewActivity" />
         <activity android:name=".ViewControl.View.CusViewActivity" />
         <activity android:name=".ViewControl.SurfaceView.SurfaceViewActivity" />
