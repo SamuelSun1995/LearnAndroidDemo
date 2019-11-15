@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Event.EventActivity">
+
+    <TableRow>
+        <Button
+        android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="控制飞机"
+            android:id="@+id/control_plane"/>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="自动播放动画"
+            android:id="@+id/auto_play"/>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="AsyncTask"
+            android:id="@+id/btn_asynctask"/>
+
+    </TableRow>
+
+
+</TableLayout>

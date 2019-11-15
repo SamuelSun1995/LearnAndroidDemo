@@ -10,32 +10,43 @@
         android:id="@+id/four_comp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="四大组件"
-        android:textSize="20dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
+        android:text="四大组件"
+        android:textSize="20dp"
 
         />
+
     <Button
         android:id="@+id/store"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="存        储"
-        android:textSize="20dp"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/four_comp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        />
+        android:text="存        储"
+        android:textSize="20dp" />
+
     <Button
         android:id="@+id/view_control"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View控件"
-        android:textSize="20dp"
-        android:textAllCaps="false"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/store"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        />
+        android:text="View控件"
+        android:textAllCaps="false"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_control"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="事        件"
+        android:textAllCaps="false"
+        android:textSize="20dp" />
 
 </RelativeLayout>

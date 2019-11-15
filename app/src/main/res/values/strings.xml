@@ -10,4 +10,7 @@
     <string name="run_singletop_mode">栈顶复用启动！</string>
     <string name="run_singletask_mode">栈内复用启动！</string>
     <string name="run_singleinstance_mode">单例模式启动！</string>
+
+
+    <string name="input_type">1234567890</string>
 </resources>

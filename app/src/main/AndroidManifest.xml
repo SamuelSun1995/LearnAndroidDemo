@@ -21,7 +21,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewControl.View.ActionViewActivity"></activity>
+        <activity android:name=".Event.AsyncTask.AsyncTaskActivity"></activity>
+        <activity android:name=".Event.Activity.HandlerActivity" />
+        <activity android:name=".Event.Listener.PlaneActivity" />
+        <activity android:name=".Event.EventActivity" />
+        <activity android:name=".ViewControl.View.ActionViewActivity" />
         <activity android:name=".ViewControl.View.FirstActivitty" />
         <activity android:name=".ViewControl.View.ActionBarActivity" />
         <activity android:name=".ViewControl.View.PopupMenuActivity" />
