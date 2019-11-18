@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Android Demo</string>
+
+    <string name="enter_activity_test">进入Anctivity测试！</string>
+    <string name="enter_service_test">进入Service测试！</string>
+    <string name="enter_broadcasst_test">进入BroadCast测试！</string>
+    <string name="enter_contentprovider_test">进入ContentProvider测试！</string>
+
+    <string name="run_standard_mode">标准模式启动！</string>
+    <string name="run_singletop_mode">栈顶复用启动！</string>
+    <string name="run_singletask_mode">栈内复用启动！</string>
+    <string name="run_singleinstance_mode">单例模式启动！</string>
+
+
+    <string name="input_type">1234567890</string>
+
+
+    <string name="international_string">international</string>
+</resources>

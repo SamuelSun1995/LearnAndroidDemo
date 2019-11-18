@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Resource.ResActivity">
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/show_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="高亮显示正在输入文本框" />
+
+
+        <Button
+            android:id="@+id/btn_cus_img_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LayerDrawable练习"
+            android:textAllCaps="false" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/btn_shapedrawable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ShapeDrawable练习"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_clipdrawable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ClipDrawable练习"
+            android:textAllCaps="false" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/btn_animationdrawable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AnimationDrawable练习"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_anim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="属性动画资源"
+            android:textAllCaps="false" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/btn_xml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="原始XML资源"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_styleandtheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="样式和主题资源"
+            android:textAllCaps="false" />
+    </TableRow>
+
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/btn_attribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="属性资源"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_ori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="原始资源"
+            android:textAllCaps="false" />
+    </TableRow>
+
+<TableRow>
+    <Button
+        android:id="@+id/btn_international"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="国际化"
+        android:textAllCaps="false" />
+</TableRow>
+</TableLayout>

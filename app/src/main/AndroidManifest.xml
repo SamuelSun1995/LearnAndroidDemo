@@ -21,7 +21,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Event.AsyncTask.AsyncTaskActivity"></activity>
+        <activity android:name=".Resource.InternationalActivity"></activity>
+        <activity android:name=".Resource.UseOriActivity" />
+        <activity android:name=".Resource.AttributeActivity" />
+        <activity android:name=".Resource.StyleAndThemeActivity" />
+        <activity android:name=".Resource.XmlActivity" />
+        <activity android:name=".Animation.AnimationActivity" />
+        <activity android:name=".Resource.AnimationDrawableActivity" />
+        <activity android:name=".Resource.ClipDrawableActivity" />
+        <activity android:name=".Resource.ShapeDrawableActivity" />
+        <activity android:name=".Resource.LayerDrawableActivity" />
+        <activity android:name=".Resource.ResEditActivity" />
+        <activity android:name=".Resource.ResActivity" />
+        <activity android:name=".Communication.IntentActivity" />
+        <activity android:name=".Communication.SecondActivity">
+            <intent-filter>
+                <action android:name="I want to go to the SecondActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="category" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Event.AsyncTask.AsyncTaskActivity" />
         <activity android:name=".Event.Activity.HandlerActivity" />
         <activity android:name=".Event.Listener.PlaneActivity" />
         <activity android:name=".Event.EventActivity" />

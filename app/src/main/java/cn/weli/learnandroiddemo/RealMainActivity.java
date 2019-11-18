@@ -5,11 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
 import android.widget.Button;
 
+import cn.weli.learnandroiddemo.Animation.AnimationActivity;
+import cn.weli.learnandroiddemo.Communication.IntentActivity;
 import cn.weli.learnandroiddemo.DataStorage.DataStoreMainActivity;
 import cn.weli.learnandroiddemo.Event.EventActivity;
 import cn.weli.learnandroiddemo.FourMajorComponents.FourMainActivity;
+import cn.weli.learnandroiddemo.Resource.ResActivity;
 import cn.weli.learnandroiddemo.ViewControl.ViewActivity;
 
 public class RealMainActivity extends AppCompatActivity {
@@ -18,6 +22,9 @@ public class RealMainActivity extends AppCompatActivity {
     private Button mStore;
     private Button mViewCon;
     private Button mBtnEvent;
+    private Button mBtnContact;
+    private Button mBtnRes;
+    private Button mBtnAnim;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +43,9 @@ public class RealMainActivity extends AppCompatActivity {
         mViewCon = findViewById(R.id.view_control);
 
         mBtnEvent = findViewById(R.id.event);
+        mBtnContact = findViewById(R.id.intent_and_intentfilter);
+        mBtnRes = findViewById(R.id.res);
+        mBtnAnim =findViewById(R.id.btn_anim_enter);
     }
 
     public void onClick() {
@@ -67,6 +77,30 @@ public class RealMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(RealMainActivity.this, EventActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtnContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RealMainActivity.this, IntentActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtnRes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RealMainActivity.this, ResActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtnAnim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RealMainActivity.this, AnimationActivity.class);
                 startActivity(intent);
             }
         });

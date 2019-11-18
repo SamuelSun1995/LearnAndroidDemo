@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--定制拖动条的外观-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--定义轨道的背景-->
+    <item android:id="@+id/background"
+        android:drawable="@drawable/my_image"/>
+
+    <!--定义轨道上已完成部分的外观-->
+    <item android:id="@+id/progress"
+        android:drawable="@drawable/slider"/>
+</layer-list>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Communication.IntentActivity">
+<TableRow>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/intent_test"
+        android:text="隐式启动"
+        android:layout_weight="1"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_backhome"
+        android:text="返回系统Home桌面"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        />
+</TableRow>
+
+    <TableRow>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_data_and_type1"
+            android:text="Data覆盖Type"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_data_and_type2"
+            android:text="Type覆盖Data"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            />
+    </TableRow>
+    <TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_data_and_type3"
+            android:text="同时设置Data和Type"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            />
+    </TableRow>
+    <TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_start_sys_activity"
+            android:text="打开浏览器"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_start_add_book"
+            android:text="打开通讯录"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_call"
+            android:text="打电话"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            />
+
+    </TableRow>
+
+</TableLayout>

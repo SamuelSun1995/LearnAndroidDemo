@@ -13,4 +13,6 @@
 
 
     <string name="input_type">1234567890</string>
+
+    <string name="international_string">国际化</string>
 </resources>
