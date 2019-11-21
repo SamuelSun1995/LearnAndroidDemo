@@ -5,10 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.Animation;
 import android.widget.Button;
 
 import cn.weli.learnandroiddemo.Animation.AnimationActivity;
+import cn.weli.learnandroiddemo.Animation.OtherDemoActivity;
+import cn.weli.learnandroiddemo.Animation.PropertyAnimationActivity;
 import cn.weli.learnandroiddemo.Communication.IntentActivity;
 import cn.weli.learnandroiddemo.DataStorage.DataStoreMainActivity;
 import cn.weli.learnandroiddemo.Event.EventActivity;
@@ -25,6 +26,7 @@ public class RealMainActivity extends AppCompatActivity {
     private Button mBtnContact;
     private Button mBtnRes;
     private Button mBtnAnim;
+    private Button mBtnOther;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +43,7 @@ public class RealMainActivity extends AppCompatActivity {
         mStore = findViewById(R.id.store);
         mBtnFour = findViewById(R.id.four_comp);
         mViewCon = findViewById(R.id.view_control);
-
+        mBtnOther = findViewById(R.id.btn_other);
         mBtnEvent = findViewById(R.id.event);
         mBtnContact = findViewById(R.id.intent_and_intentfilter);
         mBtnRes = findViewById(R.id.res);
@@ -101,6 +103,13 @@ public class RealMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(RealMainActivity.this, AnimationActivity.class);
+                startActivity(intent);
+            }
+        });
+        mBtnOther.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RealMainActivity.this, OtherDemoActivity.class);
                 startActivity(intent);
             }
         });

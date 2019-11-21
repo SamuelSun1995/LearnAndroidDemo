@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--指定动画循环播放-->
+<animation-list android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<!--添加多个帧-->
+    <item android:drawable="@drawable/mouse1"   android:duration="60"></item>
+    <item android:drawable="@drawable/mouse2"   android:duration="60"></item>
+    <item android:drawable="@drawable/mouse3"   android:duration="60"></item>
+    <item android:drawable="@drawable/mouse4"   android:duration="60"></item>
+    <item android:drawable="@drawable/mouse5"   android:duration="60"></item>
+
+</animation-list>

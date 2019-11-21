@@ -3,13 +3,11 @@ package cn.weli.learnandroiddemo.Resource;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.drawable.LayerDrawable;
 import android.os.Bundle;
-import android.util.Xml;
 import android.view.View;
 import android.widget.Button;
 
-import cn.weli.learnandroiddemo.Animation.AnimationActivity;
+import cn.weli.learnandroiddemo.Animation.PropertyAnimationActivity;
 import cn.weli.learnandroiddemo.R;
 
 public class ResActivity extends AppCompatActivity {
@@ -85,7 +83,7 @@ public class ResActivity extends AppCompatActivity {
         mBtnAnim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ResActivity.this, AnimationActivity.class);
+                Intent intent = new Intent(ResActivity.this, PropertyAnimationActivity.class);
                 startActivity(intent);
             }
         });

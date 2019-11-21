@@ -73,5 +73,15 @@
         android:textAllCaps="false"
         android:textSize="20dp" />
 
+    <Button
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_other"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:text="其       它"
+        android:textAllCaps="false"
+        android:textSize="20dp" />
+
+
 
 </LinearLayout>
