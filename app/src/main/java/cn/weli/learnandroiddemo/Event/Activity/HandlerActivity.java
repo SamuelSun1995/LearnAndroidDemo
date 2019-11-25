@@ -10,14 +10,17 @@ import android.os.Message;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TabHost;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.weli.learnandroiddemo.Event.Activity.presenter.HandlerPresenter;
+import cn.weli.learnandroiddemo.Event.Activity.view.IHandlerView;
 import cn.weli.learnandroiddemo.R;
 
-public class HandlerActivity extends AppCompatActivity {
+public class HandlerActivity extends AppCompatActivity implements IHandlerView {
 
     private final static String UPPER_NUM = "upper";
 
@@ -27,6 +30,8 @@ public class HandlerActivity extends AppCompatActivity {
 
     private CalThread mCalThread;
 
+    private HandlerPresenter mPresenter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +40,7 @@ public class HandlerActivity extends AppCompatActivity {
         mEdNum = findViewById(R.id.ed_handler);
         mBtnCalculate = findViewById(R.id.btn_handler);
         mCalThread = new CalThread();
+        mPresenter = new HandlerPresenter(this);
         //启动新线程
         new Thread(mCalThread).start();
 
@@ -53,6 +59,14 @@ public class HandlerActivity extends AppCompatActivity {
                 mCalThread.mHandler.sendMessage(msg);
             }
         });
+
+
+        mPresenter.initData();
+    }
+
+    @Override
+    public void initDataResult(int data) {
+        mEdNum.setText(String.valueOf(data));
     }
 
 
@@ -88,7 +102,6 @@ public class HandlerActivity extends AppCompatActivity {
                         //使用Toast显示统计出来的所有质数
                         Toast.makeText(HandlerActivity.this, nums.toString(), Toast.LENGTH_SHORT).show();
                     }
-
 
                 }
             };

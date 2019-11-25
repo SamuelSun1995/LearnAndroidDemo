@@ -20,8 +20,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Animation.ProanimActivity"></activity>
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        >
+
+        <activity android:name=".Net.Activity.UrlActivity">
+
+
+
+        </activity>
+        <activity android:name=".Net.Activity.NetActivity" />
+        <activity android:name=".Animation.ProanimActivity" />
         <activity android:name=".Animation.OtherDemoActivity" />
         <activity android:name=".Animation.TweenAnimActivity" />
         <activity android:name=".Animation.FrameAnimActivity" />
