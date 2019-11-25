@@ -87,36 +87,37 @@ public class UrlConnManager {
         List<NameValuePair> postParams = new ArrayList<>();
         //要传递的参数
         postParams.add(new BasicNameValuePair("username", "moon"));
-        postParams.add(new BasicNameValuePair("password","123"));
+        postParams.add(new BasicNameValuePair("password", "123"));
 
         try {
             //HttpURLConnection.getOutputStream输出流请求
-            UrlConnManager.postParams(mHttpURLConnection.getOutputStream(),postParams);
+            UrlConnManager.postParams(mHttpURLConnection.getOutputStream(), postParams);
             //HttpURLConnection.connect链接
             mHttpURLConnection.connect();
             //HttpURLConnection.getInputStream输入流 响应
             mInputStream = mHttpURLConnection.getInputStream();
             int code = mHttpURLConnection.getResponseCode();
             String respose = converStreamToString(mInputStream);
-            Log.i(TAG, "请求状态码: "+ code+"\n请求结果：\n"+respose);
+            Log.i(TAG, "请求状态码: " + code + "\n请求结果：\n" + respose);
 
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-public String converStreamToString(InputStream is){
+
+    public String converStreamToString(InputStream is) {
         String result = "";
 
 
-        byte[] bytes ;
-    try {
-        bytes = new byte[is.available()];
-        is.read(bytes);
-        result = new String(bytes);
-    } catch (IOException e) {
-        e.printStackTrace();
-    }
+        byte[] bytes;
+        try {
+            bytes = new byte[is.available()];
+            is.read(bytes);
+            result = new String(bytes);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-    return result;
-}
+        return result;
+    }
 }

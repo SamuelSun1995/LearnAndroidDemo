@@ -21,14 +21,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true"
-        >
-
-        <activity android:name=".Net.Activity.UrlActivity">
-
-
-
-        </activity>
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Net.Activity.WebViewActivity"></activity>
+        <activity android:name=".Net.Activity.OkHttpActivity" />
+        <activity android:name=".Net.Activity.UrlActivity" />
         <activity android:name=".Net.Activity.NetActivity" />
         <activity android:name=".Animation.ProanimActivity" />
         <activity android:name=".Animation.OtherDemoActivity" />

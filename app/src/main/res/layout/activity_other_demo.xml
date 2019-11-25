@@ -15,11 +15,25 @@
       android:text="Net"
       android:id="@+id/btn_net"/>
   <Button
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_weight="1"
+    android:textAllCaps="false"
+    android:text="Url"
+    android:id="@+id/btn_net_url"/>
+  <Button
       android:layout_width="match_parent"
       android:layout_height="1dp"
       android:layout_weight="1"
       android:textAllCaps="false"
-      android:text="Url"
-      android:id="@+id/btn_net_url"/>
+      android:text="OkHttp"
+      android:id="@+id/btn_okhttp"/>
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_weight="1"
+      android:textAllCaps="false"
+      android:text="WebView"
+      android:id="@+id/btn_ok_webview"/>
 
 </LinearLayout>
