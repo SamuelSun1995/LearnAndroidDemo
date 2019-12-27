@@ -82,7 +82,7 @@ public class WebViewActivity extends AppCompatActivity {
             }
         });
         //方式一：加载一个网页
-        mWebView.loadUrl("http://www.baidu.com");
+        mWebView.loadUrl("http://mini.eastday.com/mobile/191129115551002.html");
 
         //方式二：加载应用资源文件内的网页
 //        mWebView.loadUrl("file:///android_asset/test.html");
