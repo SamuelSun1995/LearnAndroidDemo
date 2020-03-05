@@ -18,8 +18,7 @@ public class MyObject {
     }
 
     //该方法将会暴露给JavaScript调用
-    @JavascriptInterface
-    public void showToast(String name){
+    @JavascriptInterface    public void showToast(String name){
 
         Toast.makeText(mContext,name+"您好！",Toast.LENGTH_SHORT).show();
 

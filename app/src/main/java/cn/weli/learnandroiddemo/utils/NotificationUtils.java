@@ -80,7 +80,7 @@ public class NotificationUtils extends ContextWrapper {
                 .setContentTitle(title)
                 .setContentText(content)
                 .setContentIntent(pendingIntent)
-                .setSmallIcon(R.drawable.push_small)
+                .setSmallIcon(R.drawable.bullet)
                 .setAutoCancel(true);
     }
 
@@ -90,7 +90,7 @@ public class NotificationUtils extends ContextWrapper {
                 .setContentTitle(title)
                 .setContentText(content)
                 .setContentIntent(pendingIntent)
-                .setSmallIcon(R.drawable.push_small)
+                .setSmallIcon(R.drawable.bullet)
                 .setAutoCancel(true);
     }
 

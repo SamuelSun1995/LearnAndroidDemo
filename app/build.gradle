@@ -33,8 +33,23 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.android.support:recyclerview-v7:28.0.0'
-
     implementation 'org.apache.httpcomponents:httpcore:4.4.1'
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
     implementation 'com.squareup.okio:okio:1.7.0'
+
+    //only Retrofit（只用Retrofit联网）
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //Rxjava and Retrofit（Retrofit+Rx需要添加的依赖）
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'io.reactivex:rxjava:1.2.1'
+
+    implementation  'com.umeng.umsdk:analytics:8.0.0'
+    implementation  'com.umeng.umsdk:common:2.0.0'
+
+    // Butterknife
+    api "com.jakewharton:butterknife:${project.BUTTERKNIFE_VERSION_CODE}"
+
+    implementation files('libs/LinkedME-Android-Deep-Linking-SDK-V1.1.6.jar')
 }
