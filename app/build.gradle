@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 28
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "cn.weli.learnandroiddemo"
-        minSdkVersion 15
-        targetSdkVersion 29
+        minSdkVersion 21
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -52,4 +52,6 @@ dependencies {
     api "com.jakewharton:butterknife:${project.BUTTERKNIFE_VERSION_CODE}"
 
     implementation files('libs/LinkedME-Android-Deep-Linking-SDK-V1.1.6.jar')
+
+    implementation files('libs/oaid_sdk_1.0.25.aar')
 }

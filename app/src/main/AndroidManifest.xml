@@ -27,7 +27,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Net.Activity.WebViewActivity"></activity>
+        <activity android:name=".Resource.TelephonyActivity"></activity>
+        <activity android:name=".Net.Activity.WebViewActivity" />
         <activity android:name=".Net.Activity.OkHttpActivity" />
         <activity android:name=".Net.Activity.UrlActivity" />
         <activity android:name=".Net.Activity.NetActivity" />

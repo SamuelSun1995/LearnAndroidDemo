@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Telephony;
 import android.view.View;
 import android.widget.Button;
 
@@ -22,6 +23,7 @@ public class ResActivity extends AppCompatActivity {
     private Button mBtnAttribute;
     private Button mBtnUseOri;
     private Button mBtnInternational;
+    private Button mBtnPhoneInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,14 +33,19 @@ public class ResActivity extends AppCompatActivity {
         mBtnCus = findViewById(R.id.btn_cus_img_bar);
         mBtnShape = findViewById(R.id.btn_shapedrawable);
         mBtnClip = findViewById(R.id.btn_clipdrawable);
-        mBtnAnimation= findViewById(R.id.btn_animationdrawable);
-        mBtnAnim= findViewById(R.id.btn_anim);
+        mBtnAnimation = findViewById(R.id.btn_animationdrawable);
+        mBtnAnim = findViewById(R.id.btn_anim);
         mBtnXml = findViewById(R.id.btn_xml);
         mBtnStyleAndTheme = findViewById(R.id.btn_styleandtheme);
         mBtnInternational = findViewById(R.id.btn_international);
         mBtnAttribute = findViewById(R.id.btn_attribute);
-        mBtnUseOri =findViewById(R.id.btn_ori);
+        mBtnUseOri = findViewById(R.id.btn_ori);
+        mBtnPhoneInfo = findViewById(R.id.btn_req_phoneInfo);
 
+        mBtnPhoneInfo.setOnClickListener((v) -> {
+            Intent intent = new Intent(ResActivity.this, TelephonyActivity.class);
+            startActivity(intent);
+        });
 
         mBtnShowEdit.setOnClickListener(new View.OnClickListener() {
             @Override

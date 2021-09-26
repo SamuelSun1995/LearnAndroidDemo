@@ -21,6 +21,7 @@ public class WaitNotifyDemo {
 
     private static Runnable numPrint(int num){
         byte res[];
-
+        return null;
+        
     }
 }

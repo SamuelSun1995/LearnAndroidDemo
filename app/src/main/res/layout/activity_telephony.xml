@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Resource.TelephonyActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IMEI:"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/tv_imei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="12345678"
+            android:paddingLeft="15dp"
+            android:textSize="24sp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IMSI:"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/tv_imsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="12345678"
+            android:paddingLeft="15dp"
+            android:textSize="24sp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OAID:"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/tv_oaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="12345678"
+            android:paddingLeft="15dp"
+            android:textSize="24sp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
